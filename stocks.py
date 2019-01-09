@@ -11,6 +11,14 @@ purchases = [
   ('DS', 24, '31-dec-1999', 32)
 ]
 
+# 1) We want individual output like this:
+# I purchased General Electric stock on 10 - sep - 2001 for $4800
+# 2) While also building up a collection we can loop over that contains each company and all the purchases we made of that company's stock
+# report = {
+#     "GE": [('GE', 100, '10-sep-2001', 48), ('GE', 200, '1-jul-1998', 56)],
+#     "CAT": [('CAT', 100, '1-apr-1999', 24)]
+# }
+# so we can loop over that and generate a readable report in the terminal 
 
 report = {}
 for purchase in purchases:
